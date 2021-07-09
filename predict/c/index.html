@@ -13,10 +13,10 @@
 <meta name="keywords" content="runtime, verification, rv, k" />
 <meta name="author" content="RV-Toolkit | Runtime Verification Inc" />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://runtimeverification.github.io/rv-toolkit-docs/" />
+<link rel="canonical" href="https://runtimeverification.github.io/rv-toolkit-docs/predict/c/" />
 
 <!--favicon icon-->
-<link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+<link rel="icon" type="image/png" href="../../assets/img/favicon.ico" />
 
 <title>RV-Toolkit | Runtime Verification Inc</title>
 
@@ -37,11 +37,11 @@
   rel="stylesheet"
 />
 
-<link href="./assets/css/index.css" rel="stylesheet" />
+<link href="../../assets/css/index.css" rel="stylesheet" />
 
 <!--[if (gt IE 9) |!(IE)]><!-->
 <!--<link rel="stylesheet" href="/assets/vendor/custom-nav/css/effects/fade-menu.css"/>-->
-<!-- <link rel="stylesheet" href="./assets/k/vl-nav/css/effects/slide-menu.css" /> -->
+<!-- <link rel="stylesheet" href="../../assets/k/vl-nav/css/effects/slide-menu.css" /> -->
 <!--<![endif]-->
 
   </head>
@@ -50,7 +50,7 @@
 <header
   class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"
 >
-  <a class="logo-link" href="./index.html"> RV-Toolkit </a>
+  <a class="logo-link" href="../../index.html"> RV-Toolkit </a>
   <ul class="navbar-nav ml-md-auto">
     <li class="nav-item">
       <a
@@ -67,7 +67,7 @@
   <!--
   <a
     class="btn btn-rv-blue d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3"
-    href="./downloads"
+    href="../../downloads"
     >Download</a
   >
   -->
@@ -100,9 +100,22 @@
   </form>
   <nav class="collapse bd-links" aria-label="Main navigation">
     <div class="bd-toc-item">
-      <a class="bd-toc-link" href="./match/">RV-Match</a>
-      <a class="bd-toc-link" href="./predict/java">RV-Predict/Java</a>
-      <a class="bd-toc-link" href="./predict/c">RV-Predict/C</a>
+      <a class="bd-toc-link" href="../../predict/c/">Welcome!</a>
+      <a class="bd-toc-link" href="../../predict/c/installation/"
+        >Installation</a
+      >
+      <a class="bd-toc-link" href="../../predict/c/quickstart/"
+        >Quickstart</a
+      >
+      <a class="bd-toc-link" href="../../predict/c/runningexamples/"
+        >Running Examples</a
+      >
+      <a
+        class="bd-toc-link"
+        href="https://runtimeverification.com/blog/category/rv-predict/"
+        target="_blank"
+        >RV-Predict Blog</a
+      >
     </div>
   </nav>
 </div>
@@ -111,11 +124,18 @@
           class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="rv-toolkit-website">RV-Toolkit Website</h1>
+          <div class="markdown-preview"><html><head></head><body><h1 id="rv-predict%2Fc">RV-Predict/C</h1>
+<p>RV-Predict/C is the only dynamic data race detector that is both sound and maximal. <em>Dynamic</em> means that it executes the program in order to extract an execution trace to analyze. <em>Sound</em> means that it only reports races which are real (i.e., no false positives). And <em>maximal</em> means that it finds all the races that can be found by any other sound race detector analyzing the same execution trace. The technology underlying RV-Predict is best explained in the following papers:</p>
+<blockquote>
+<p>Jeff Huang, Patrick O&apos;Neil Meredith, and Grigore Rosu. 2014. <a href="http://dx.doi.org/10.1145/2594291.2594315" target="_blank" rel="noopener">Maximal sound predictive race detection with control flow abstraction</a>. In Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI &apos;14). ACM, New York, NY, USA, 337-348.</p>
+<p>Traian-Florin Serbanuta, Feng Chen, and Grigore Rosu. 2012. <a href="http://dx.doi.org/10.1007/978-3-642-35632-2_16" target="_blank" rel="noopener">Maximal Causal Models for Sequentially Consistent Systems</a>. In Proceedings of the 3rd International Conference on Runtime Verification (RV &apos;12). LNCS Volume 7687, 2013, pp. 136-150</p>
+</blockquote>
+<h2 id="contents">Contents</h2>
 <ul>
-<li><a href="match/">RV-Match</a></li>
-<li><a href="predict/java/">RV-Predict/Java</a></li>
-<li><a href="predict/c/">RV-Predict/C</a></li>
+<li><a href="installation/">Installation</a></li>
+<li><a href="quickstart/">Quickstart</a></li>
+<li><a href="runningexamples/">Running Examples</a></li>
+<li><a href="https://runtimeverification.com/blog/category/rv-predict" target="_blank" rel="noopener">Blog</a></li>
 </ul>
 </body></html></div>
         </main>
@@ -157,6 +177,6 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Typist/1.2/typist.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="../../assets/js/index.js"></script>
   </body>
 </html>

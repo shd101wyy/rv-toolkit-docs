@@ -13,10 +13,10 @@
 <meta name="keywords" content="runtime, verification, rv, k" />
 <meta name="author" content="RV-Toolkit | Runtime Verification Inc" />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://runtimeverification.github.io/rv-toolkit-docs/" />
+<link rel="canonical" href="https://runtimeverification.github.io/rv-toolkit-docs/predict/c/quickstart/" />
 
 <!--favicon icon-->
-<link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+<link rel="icon" type="image/png" href="../../../assets/img/favicon.ico" />
 
 <title>RV-Toolkit | Runtime Verification Inc</title>
 
@@ -37,11 +37,11 @@
   rel="stylesheet"
 />
 
-<link href="./assets/css/index.css" rel="stylesheet" />
+<link href="../../../assets/css/index.css" rel="stylesheet" />
 
 <!--[if (gt IE 9) |!(IE)]><!-->
 <!--<link rel="stylesheet" href="/assets/vendor/custom-nav/css/effects/fade-menu.css"/>-->
-<!-- <link rel="stylesheet" href="./assets/k/vl-nav/css/effects/slide-menu.css" /> -->
+<!-- <link rel="stylesheet" href="../../../assets/k/vl-nav/css/effects/slide-menu.css" /> -->
 <!--<![endif]-->
 
   </head>
@@ -50,7 +50,7 @@
 <header
   class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"
 >
-  <a class="logo-link" href="./index.html"> RV-Toolkit </a>
+  <a class="logo-link" href="../../../index.html"> RV-Toolkit </a>
   <ul class="navbar-nav ml-md-auto">
     <li class="nav-item">
       <a
@@ -67,7 +67,7 @@
   <!--
   <a
     class="btn btn-rv-blue d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3"
-    href="./downloads"
+    href="../../../downloads"
     >Download</a
   >
   -->
@@ -100,9 +100,22 @@
   </form>
   <nav class="collapse bd-links" aria-label="Main navigation">
     <div class="bd-toc-item">
-      <a class="bd-toc-link" href="./match/">RV-Match</a>
-      <a class="bd-toc-link" href="./predict/java">RV-Predict/Java</a>
-      <a class="bd-toc-link" href="./predict/c">RV-Predict/C</a>
+      <a class="bd-toc-link" href="../../../predict/c/">Welcome!</a>
+      <a class="bd-toc-link" href="../../../predict/c/installation/"
+        >Installation</a
+      >
+      <a class="bd-toc-link" href="../../../predict/c/quickstart/"
+        >Quickstart</a
+      >
+      <a class="bd-toc-link" href="../../../predict/c/runningexamples/"
+        >Running Examples</a
+      >
+      <a
+        class="bd-toc-link"
+        href="https://runtimeverification.com/blog/category/rv-predict/"
+        target="_blank"
+        >RV-Predict Blog</a
+      >
     </div>
   </nav>
 </div>
@@ -111,12 +124,22 @@
           class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="rv-toolkit-website">RV-Toolkit Website</h1>
-<ul>
-<li><a href="match/">RV-Match</a></li>
-<li><a href="predict/java/">RV-Predict/Java</a></li>
-<li><a href="predict/c/">RV-Predict/C</a></li>
-</ul>
+          <div class="markdown-preview"><html><head></head><body><h1 id="running-rv-predict%2Fc">Running RV-Predict/C</h1>
+<p>RV-Predict/C works in two steps. First, <code>$ rvpc file.c</code> creates an instrumented version of a multithreaded C program (<code>rvpc</code> is just a wrapper for our customized version of clang compiler). Second, <code>$ ./a.out</code> runs the program and performs offline data-race analysis.</p>
+<pre><code>rvpc file.c
+./a.out
+</code></pre>
+<p>For C++ programs, just use <code>rvpc++ file.cpp</code> as shown below:</p>
+<pre><code>rvpc++ file.cpp
+./a.out
+</code></pre>
+<p>To use RV-Predict/C with a piece of software that is configured using GNU Autoconf, use the following command:</p>
+<pre><code>CC=rvpc CXX=rvpc++ LD=rvpld ./configure
+</code></pre>
+<p>To use RV-Predict/C on a project that uses a makefile but does <em>not</em> use GNU autoconf, provide a CC variable on the command line:</p>
+<pre><code>make &lt;target&gt; CC=rvpc CXX=rvpc++ LD=rvpld
+</code></pre>
+<p>Note: if your code uses <code>g++</code> or <code>clang++</code>, then replace <code>rvpc</code> with <code>rvpc++</code>.</p>
 </body></html></div>
         </main>
       </div>
@@ -157,6 +180,6 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Typist/1.2/typist.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="../../../assets/js/index.js"></script>
   </body>
 </html>

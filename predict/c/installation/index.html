@@ -13,10 +13,10 @@
 <meta name="keywords" content="runtime, verification, rv, k" />
 <meta name="author" content="RV-Toolkit | Runtime Verification Inc" />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://runtimeverification.github.io/rv-toolkit-docs/" />
+<link rel="canonical" href="https://runtimeverification.github.io/rv-toolkit-docs/predict/c/installation/" />
 
 <!--favicon icon-->
-<link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+<link rel="icon" type="image/png" href="../../../assets/img/favicon.ico" />
 
 <title>RV-Toolkit | Runtime Verification Inc</title>
 
@@ -37,11 +37,11 @@
   rel="stylesheet"
 />
 
-<link href="./assets/css/index.css" rel="stylesheet" />
+<link href="../../../assets/css/index.css" rel="stylesheet" />
 
 <!--[if (gt IE 9) |!(IE)]><!-->
 <!--<link rel="stylesheet" href="/assets/vendor/custom-nav/css/effects/fade-menu.css"/>-->
-<!-- <link rel="stylesheet" href="./assets/k/vl-nav/css/effects/slide-menu.css" /> -->
+<!-- <link rel="stylesheet" href="../../../assets/k/vl-nav/css/effects/slide-menu.css" /> -->
 <!--<![endif]-->
 
   </head>
@@ -50,7 +50,7 @@
 <header
   class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"
 >
-  <a class="logo-link" href="./index.html"> RV-Toolkit </a>
+  <a class="logo-link" href="../../../index.html"> RV-Toolkit </a>
   <ul class="navbar-nav ml-md-auto">
     <li class="nav-item">
       <a
@@ -67,7 +67,7 @@
   <!--
   <a
     class="btn btn-rv-blue d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3"
-    href="./downloads"
+    href="../../../downloads"
     >Download</a
   >
   -->
@@ -100,9 +100,22 @@
   </form>
   <nav class="collapse bd-links" aria-label="Main navigation">
     <div class="bd-toc-item">
-      <a class="bd-toc-link" href="./match/">RV-Match</a>
-      <a class="bd-toc-link" href="./predict/java">RV-Predict/Java</a>
-      <a class="bd-toc-link" href="./predict/c">RV-Predict/C</a>
+      <a class="bd-toc-link" href="../../../predict/c/">Welcome!</a>
+      <a class="bd-toc-link" href="../../../predict/c/installation/"
+        >Installation</a
+      >
+      <a class="bd-toc-link" href="../../../predict/c/quickstart/"
+        >Quickstart</a
+      >
+      <a class="bd-toc-link" href="../../../predict/c/runningexamples/"
+        >Running Examples</a
+      >
+      <a
+        class="bd-toc-link"
+        href="https://runtimeverification.com/blog/category/rv-predict/"
+        target="_blank"
+        >RV-Predict Blog</a
+      >
     </div>
   </nav>
 </div>
@@ -111,12 +124,21 @@
           class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="rv-toolkit-website">RV-Toolkit Website</h1>
-<ul>
-<li><a href="match/">RV-Match</a></li>
-<li><a href="predict/java/">RV-Predict/Java</a></li>
-<li><a href="predict/c/">RV-Predict/C</a></li>
-</ul>
+          <div class="markdown-preview"><html><head></head><body><h1 id="installation">Installation</h1>
+<h2 id="requirements">Requirements</h2>
+<p>Note</p>
+<p>We only currently officially support RV-Predict/C on 64-bit Ubuntu Linux 16.04 and greater. If you would like to use a different distribution, <a href="https://runtimeverification.com/contact#nav-embedded-systems" target="_blank" rel="noopener">contact support</a> and we will try to support you.</p>
+<h2 id="gui-installer">GUI Installer</h2>
+<ol>
+<li>Download and install the Oracle Java 8 (or higher) JRE or OpenJDK 8 JRE for your architecture.</li>
+<li>Download the <a href="#">RV-Predict/C GUI installer</a>.</li>
+<li>Run the <code>.jar</code> file with <code>java -jar rv-predict-c-installer.jar</code>. Follow the instructions to finish the installation.</li>
+</ol>
+<h2 id="debian-package">Debian package</h2>
+<ol>
+<li>Download the <a href="#">RV-Predict/C Debian package</a>.</li>
+<li>Install the <code>.deb</code> file with <code>sudo apt-get update; sudo dpkg -i rv-predict-c.deb; sudo apt-get install -f -y</code>.</li>
+</ol>
 </body></html></div>
         </main>
       </div>
@@ -157,6 +179,6 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Typist/1.2/typist.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="../../../assets/js/index.js"></script>
   </body>
 </html>
