@@ -132,10 +132,10 @@
   </div>
   
         <main
-          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          class="col-12 col-md-6 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="welcome">Welcome</h1>
+          <div class="introduction markdown-preview"><html><head></head><body><h1 id="welcome">Welcome</h1>
 <p>RV-Match is a program analysis environment based on the <a href="http://kframework.org/" target="_blank" rel="noopener">K semantic framework</a>. The formal semantics of a target programming language is given as input, and RV-Match provides a series of formal analysis tools specialized for that language, such as a symbolic execution engine, a semantic debugger, a systematic checker for undesired behaviors (model-checker), and even a fully fledged deductive program verifier. RV-Match is currently instantiated and optimized to work with the publicly available <a href="https://github.com/kframework/c-semantics" target="_blank" rel="noopener">C11 semantics</a> that rigorously formalizes the current <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=57853" target="_blank" rel="noopener">ISO C11 Standard</a>, in the form of a tool called <code>kcc</code>, an ISO C11-compliant compiler for C. The novel technology underlying the <code>kcc</code> tool and the C11 semantics are best explained in the following papers:</p>
 <blockquote>
 <p>Dwight Guth, Chris Hathhorn, Manasvi Saxena, and Grigore Rosu. 2016. <a href="http://dx.doi.org/10.1007/978-3-319-41528-4_24" target="_blank" rel="noopener">RV-Match: Practical Semantics-Based Program Analysis</a>. In Proceedings of the 28th International Conference on Computer Aided Verification (CAV &#x2018;16). LNCS Volume 9779, 2016, pp 447-453. (Also available at <a href="http://fsl.cs.illinois.edu/index.php/RV-Match:_Practical_Semantics-Based_Program_Analysis" target="_blank" rel="noopener">FSL@UIUC</a>)</p>
@@ -146,6 +146,27 @@
 <p>This is critical because many of these behaviors are not only unintended, but also subject to change if you switch to a new target platform, compiler, or compiler version or optimization. A program that seems to run perfectly in one environment can crash or behave incorrectly in another environment.</p>
 </body></html></div>
         </main>
+
+        <!-- Page ToC -->
+        <div class="col-12 col-md-3 col-xl-2 py-md-3 bd-sidebar page-toc mb-3">
+          
+<div>
+  <div style="padding:0.25rem 0;">
+    <strong>On this page</strong>
+  </div>
+<div style="padding:0.25rem 0;">
+              <a
+                href="#welcome"
+                class="bd-toc-link"
+                style="margin-left: 0px;;display:inline;padding:0.25rem 0;"
+              >
+                Welcome
+              </a></div>
+</div>
+
+        </div>
+        <div class="btn btn-rv-blue page-toc-toggle-btn"></div>
+        <!-- End Page ToC -->
       </div>
     </div>
 <!-- The footer is now controlled by the k-web-theme git submodule -->

@@ -132,10 +132,10 @@
   </div>
   
         <main
-          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          class="col-12 col-md-6 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="creating-error-reports">Creating Error Reports</h1>
+          <div class="introduction markdown-preview"><html><head></head><body><h1 id="creating-error-reports">Creating Error Reports</h1>
 <p>In addition to the standard way for <code>kcc</code> to report warnings on the command line, it is also possible to create a graphical error report highlighting each error and allowing for search, filtering, sorting, and examination of defects by file in your browser. This utilizes the html report generator provided with an installation of rv-match, <code>rv-html-report</code>.</p>
 <h2 id="generating-a-data-set-for-reporting">Generating a data set for reporting</h2>
 <p>Generally speaking, it is most interesting to analyze an error report in aggregate that combines all the static and dynamic errors from building and testing your application. In order to do this, it is necessary first to collect the errors from a run of your build system into a single file. The <code>-fissue-report</code> flag to <code>kcc</code> does this. For example, if your C application lives in your home directory in rthe <code>myapp</code> folder, and is built using autotools, you can generate such a data set for your application with the following set of commands:</p>
@@ -155,6 +155,47 @@
 <p>On the error details page, you can click on each stack frame to collaps or expand a code snippet showing the highlighted line of code pertaining to that frame of the stack trace of the error. You can click the links to the citations to be referred to relevant language standards and code safety standards of interest relevant to the error, and you can click the back link to take you back to the table view.</p>
 </body></html></div>
         </main>
+
+        <!-- Page ToC -->
+        <div class="col-12 col-md-3 col-xl-2 py-md-3 bd-sidebar page-toc mb-3">
+          
+<div>
+  <div style="padding:0.25rem 0;">
+    <strong>On this page</strong>
+  </div>
+<details style="margin-left: 0px;;padding:0.25rem 0;" open>
+            <summary><a style="display:inline;padding:0.25rem 0;" href="#creating-error-reports" class="bd-toc-link">Creating Error Reports</a></summary>
+            <div>
+              <div style="padding:0.25rem 0;">
+              <a
+                href="#generating-a-data-set-for-reporting"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Generating a data set for reporting
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#generating-the-report"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Generating the report
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#navigating-report-pages"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Navigating report pages
+              </a></div>
+            </div>
+          </details>
+        
+</div>
+
+        </div>
+        <div class="btn btn-rv-blue page-toc-toggle-btn"></div>
+        <!-- End Page ToC -->
       </div>
     </div>
 <!-- The footer is now controlled by the k-web-theme git submodule -->

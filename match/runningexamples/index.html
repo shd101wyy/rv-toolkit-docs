@@ -132,10 +132,10 @@
   </div>
   
         <main
-          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          class="col-12 col-md-6 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="running-examples">Running Examples</h1>
+          <div class="introduction markdown-preview"><html><head></head><body><h1 id="running-examples">Running Examples</h1>
 <p>We provide several examples showcasing various capabilities of RV-Match&#x2019;s <code>kcc</code> tool, in a folder <a href="https://github.com/kframework/c-semantics/tree/master/examples/c" target="_blank" rel="noopener">examples</a>. We recommend <a href="https://github.com/kframework/c-semantics/tree/master/examples/c/demo" target="_blank" rel="noopener">examples/demo</a> as a good starting point for exploring the bug finding capabilities of <code>kcc</code>. For any file in that directory, simply run <code>kcc [file].c</code> to compile it, followed by <code>./a.out</code> to execute it. We next discuss some of the programs in the demo folder, mentioning that they only cover a small subset of the errors that <code>kcc</code> can report.</p>
 <h2 id="unsequenced-side-effects">Unsequenced Side Effects</h2>
 <p>At its most basic level, <code>kcc</code> can detect undefined behaviors in programs. Consider the following three-line <code>1-unsequenced-side-effect.c</code> program:</p>
@@ -383,6 +383,82 @@ Referring to an object outside of its lifetime.
 <p>The above are only a few of the different types of errors, like undefined behavior, that <code>kcc</code> is able to detect. Other undefined behaviors which have been discovered frequently in real code bases include use of functions that have not been declared, creation of incorrectly aligned pointers, comparison between pointers to different memory objects, and incorrect use of dynamic format strings to <code>printf</code>. If you want to see all the different types of errors or warnings that <code>kcc</code> can report, see its complete list of <a href="https://github.com/kframework/c-semantics/blob/master/examples/c/error-codes/Error_Codes.csv" target="_blank" rel="noopener">error codes</a> as well as the corresponding <a href="https://github.com/kframework/c-semantics/tree/master/examples/c/error-codes" target="_blank" rel="noopener">canonical programs</a> illustrating them.</p>
 </body></html></div>
         </main>
+
+        <!-- Page ToC -->
+        <div class="col-12 col-md-3 col-xl-2 py-md-3 bd-sidebar page-toc mb-3">
+          
+<div>
+  <div style="padding:0.25rem 0;">
+    <strong>On this page</strong>
+  </div>
+<details style="margin-left: 0px;;padding:0.25rem 0;" open>
+            <summary><a style="display:inline;padding:0.25rem 0;" href="#running-examples" class="bd-toc-link">Running Examples</a></summary>
+            <div>
+              <div style="padding:0.25rem 0;">
+              <a
+                href="#unsequenced-side-effects"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Unsequenced Side Effects
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#buffer-overflows-and-underflows"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Buffer Overflows and Underflows
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#input-dependent-behavior"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Input-Dependent Behavior
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#implementation-defined-behavior"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Implementation-Defined Behavior
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#out-of-lifetime-access"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Out of Lifetime Access
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#overflow-and-optimizations"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Overflow and Optimizations
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#warnings%2C-or-lint-style-issues"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Warnings, or Lint-Style Issues
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#and-many-more"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                And Many More
+              </a></div>
+            </div>
+          </details>
+        
+</div>
+
+        </div>
+        <div class="btn btn-rv-blue page-toc-toggle-btn"></div>
+        <!-- End Page ToC -->
       </div>
     </div>
 <!-- The footer is now controlled by the k-web-theme git submodule -->

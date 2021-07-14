@@ -121,10 +121,10 @@
 </div>
 
         <main
-          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          class="col-12 col-md-6 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="running-examples">Running Examples</h1>
+          <div class="introduction markdown-preview"><html><head></head><body><h1 id="running-examples">Running Examples</h1>
 <p>RV-Predict comes with a suite of small benchmark examples which can be found in <code>examples/examples.jar</code>, whose source code is in <code>examples/src</code>. Please consult <code>examples/README.md</code> for more details. We strongly encourage you to also check out our blog article <a href="https://runtimeverification.com/blog/detecting-popular-data-races-in-java-using-rv-predict" target="_blank" rel="noopener">Detecting popular data races in Java using RV-Predict</a>, execute all those examples (they are included in <code>examples.jar</code>) and try to understand the data races occurring in each and how RV-Predict detects and reports them. Below we only discuss the example <code>account.Account</code>.</p>
 <h2 id="account.account">account.Account</h2>
 <p>For brevety, assume we are in the <code>examples</code> directory.</p>
@@ -240,6 +240,60 @@ Data race on field account.Account.Bank_Total: {{{
 <p>Check out more examples at <a href="https://runtimeverification.com/blog/detecting-popular-data-races-in-java-using-rv-predict" target="_blank" rel="noopener">Detecting popular data races in Java using RV-Predict</a>.</p>
 </body></html></div>
         </main>
+
+        <!-- Page ToC -->
+        <div class="col-12 col-md-3 col-xl-2 py-md-3 bd-sidebar page-toc mb-3">
+          
+<div>
+  <div style="padding:0.25rem 0;">
+    <strong>On this page</strong>
+  </div>
+<details style="margin-left: 0px;;padding:0.25rem 0;" open>
+            <summary><a style="display:inline;padding:0.25rem 0;" href="#running-examples" class="bd-toc-link">Running Examples</a></summary>
+            <div>
+              <details style="margin-left: 8px;;padding:0.25rem 0;" >
+            <summary><a style="display:inline;padding:0.25rem 0;" href="#account.account" class="bd-toc-link">account.Account</a></summary>
+            <div>
+              <div style="padding:0.25rem 0;">
+              <a
+                href="#normal-run"
+                class="bd-toc-link"
+                style="margin-left: 16px;;display:inline;padding:0.25rem 0;"
+              >
+                Normal run
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#rv-predict-run"
+                class="bd-toc-link"
+                style="margin-left: 16px;;display:inline;padding:0.25rem 0;"
+              >
+                RV-Predict run
+              </a></div>
+            </div>
+          </details>
+        <div style="padding:0.25rem 0;">
+              <a
+                href="#interpreting-the-results"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                Interpreting the results
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#more-examples"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                More Examples
+              </a></div>
+            </div>
+          </details>
+        
+</div>
+
+        </div>
+        <div class="btn btn-rv-blue page-toc-toggle-btn"></div>
+        <!-- End Page ToC -->
       </div>
     </div>
 <!-- The footer is now controlled by the k-web-theme git submodule -->

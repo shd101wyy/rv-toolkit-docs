@@ -121,10 +121,10 @@
 </div>
 
         <main
-          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          class="col-12 col-md-6 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="running-rv-predict%2Fc">Running RV-Predict/C</h1>
+          <div class="introduction markdown-preview"><html><head></head><body><h1 id="running-rv-predict%2Fc">Running RV-Predict/C</h1>
 <p>RV-Predict/C works in two steps. First, <code>$ rvpc file.c</code> creates an instrumented version of a multithreaded C program (<code>rvpc</code> is just a wrapper for our customized version of clang compiler). Second, <code>$ ./a.out</code> runs the program and performs offline data-race analysis.</p>
 <pre><code>rvpc file.c
 ./a.out
@@ -142,6 +142,27 @@
 <p>Note: if your code uses <code>g++</code> or <code>clang++</code>, then replace <code>rvpc</code> with <code>rvpc++</code>.</p>
 </body></html></div>
         </main>
+
+        <!-- Page ToC -->
+        <div class="col-12 col-md-3 col-xl-2 py-md-3 bd-sidebar page-toc mb-3">
+          
+<div>
+  <div style="padding:0.25rem 0;">
+    <strong>On this page</strong>
+  </div>
+<div style="padding:0.25rem 0;">
+              <a
+                href="#running-rv-predict%2Fc"
+                class="bd-toc-link"
+                style="margin-left: 0px;;display:inline;padding:0.25rem 0;"
+              >
+                Running RV-Predict/C
+              </a></div>
+</div>
+
+        </div>
+        <div class="btn btn-rv-blue page-toc-toggle-btn"></div>
+        <!-- End Page ToC -->
       </div>
     </div>
 <!-- The footer is now controlled by the k-web-theme git submodule -->

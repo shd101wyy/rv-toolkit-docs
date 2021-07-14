@@ -121,10 +121,10 @@
 </div>
 
         <main
-          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+          class="col-12 col-md-6 col-xl-8 py-md-3 pl-md-5 bd-content"
           role="main"
         >
-          <div class="markdown-preview"><html><head></head><body><h1 id="running-the-examples">Running the examples</h1>
+          <div class="introduction markdown-preview"><html><head></head><body><h1 id="running-the-examples">Running the examples</h1>
 <p>We provide examples demonstrating RV-Predict capabilities in detecting concurrency bugs. Below we focus on detecting data races. Data races are a common kind of concurrency bug in multithreaded applications. A data race occurs when two threads concurrently access a shared memory and at least one of the accesses is a write. Data races are very hard to detect with traditional testing techniques. It requires occurrence of simultaneous access from multiple threads to a particular region which results in corrupted data that violates a particular user-provided assertion or test case. Traditional software engineering testing methods are inadequate, because all tests passing most of the time with only rare, mysterious failures might create a false sense of reliability.</p>
 <p>Despite all the effort spent on solving this problem, it remains a challenge in practice to detect data races effectively and efficiently. RV-Predict aims to change this undesirable situation. Below we summarize some of the most common data races in C and C++, showing how to detect them with RV-Predict. The examples described below can be found in the directory <code>/usr/share/examples/rv-predict-c</code>.</p>
 <h2 id="1.-concurrent-access-to-a-shared-variable">1. Concurrent Access to a Shared Variable</h2>
@@ -536,6 +536,60 @@ bool condition <span class="token operator">=</span> false<span class="token pun
 </code></pre>
 </body></html></div>
         </main>
+
+        <!-- Page ToC -->
+        <div class="col-12 col-md-3 col-xl-2 py-md-3 bd-sidebar page-toc mb-3">
+          
+<div>
+  <div style="padding:0.25rem 0;">
+    <strong>On this page</strong>
+  </div>
+<details style="margin-left: 0px;;padding:0.25rem 0;" open>
+            <summary><a style="display:inline;padding:0.25rem 0;" href="#running-the-examples" class="bd-toc-link">Running the examples</a></summary>
+            <div>
+              <details style="margin-left: 8px;;padding:0.25rem 0;" >
+            <summary><a style="display:inline;padding:0.25rem 0;" href="#1.-concurrent-access-to-a-shared-variable" class="bd-toc-link">1. Concurrent Access to a Shared Variable</a></summary>
+            <div>
+              <div style="padding:0.25rem 0;">
+              <a
+                href="#posix-threads"
+                class="bd-toc-link"
+                style="margin-left: 16px;;display:inline;padding:0.25rem 0;"
+              >
+                POSIX Threads
+              </a></div>
+            </div>
+          </details>
+        <div style="padding:0.25rem 0;">
+              <a
+                href="#2.-simple-state-machine"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                2. Simple State Machine
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#3.-double-checked-locking"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                3. Double-checked Locking
+              </a></div><div style="padding:0.25rem 0;">
+              <a
+                href="#4.-broken-spinnning-loop"
+                class="bd-toc-link"
+                style="margin-left: 8px;;display:inline;padding:0.25rem 0;"
+              >
+                4. Broken Spinnning Loop
+              </a></div>
+            </div>
+          </details>
+        
+</div>
+
+        </div>
+        <div class="btn btn-rv-blue page-toc-toggle-btn"></div>
+        <!-- End Page ToC -->
       </div>
     </div>
 <!-- The footer is now controlled by the k-web-theme git submodule -->
